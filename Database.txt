@@ -1,0 +1,8 @@
+***** Installing WP Forms Lite ******
++ wp_actionscheduler_actions
++ wp_actionscheduler_claim
++ wp_actionscheduler_groups
++ wp_actionscheduler_logs
++ wp_wpforms_payments
++ wp_wpforms_payment_meta
++ wp_wpforms_tasks_meta

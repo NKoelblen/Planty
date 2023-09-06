@@ -16,8 +16,6 @@ function planty_setup()
 {
     add_theme_support('custom-logo');
 
-    register_nav_menus(array('footer-menu' => esc_html__('Menu Pied de page')));
-
     add_theme_support('editor-color-palette', array(
         array(
             'name'  => esc_attr__('Noir', 'themeLangDomain'),
@@ -50,4 +48,6 @@ function planty_setup()
             'color' => '#3B8E46',
         ),
     ));
+
+    register_nav_menus(array('footer-menu' => esc_html__('Menu Pied de page')));
 }

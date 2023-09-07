@@ -33,11 +33,7 @@
                                 </div>
                             </label>
                             <div>
-                                <input type="quantity" id="<?php echo $post->post_name . '-quantity' ?>" name="<?php echo $post->post_name . '-quantity' ?>" min="0" placeholder="0" />
-                                <div class="plus-minus-buttons">
-                                    <button type="button" class="plus-button">+</button>
-                                    <button type="button" class="minus-button">-</button>
-                                </div>
+                                <input type="number" id="<?php echo $post->post_name . '-quantity' ?>" name="<?php echo $post->post_name . '-quantity' ?>" class="quantity" value="0" min="0" />
                                 <button type="button">OK</button>
                             </div>
                     <?php endwhile;

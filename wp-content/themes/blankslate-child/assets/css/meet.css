@@ -1,0 +1,55 @@
+/*** Page Nous rencontrer ***/
+.meet-h-group .wp-block-group__inner-container {
+    position: relative;
+}
+.green-flower {
+    position: absolute;
+    top: clamp(39.67px, 4.93vw, 71px);
+    left: 9.93vw;
+
+    width: clamp(106.66px, 13.26vw, 190.9px)
+}
+#post-8 .framed {
+    max-width: 669px;
+
+    margin: auto;
+}
+.team-container {
+    position: relative;
+}
+.team {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    width: min(56.6vw, 815px);
+    
+    gap: 30px;
+    margin: auto;
+}
+@media (max-width: 991px) {
+    .team {
+        justify-content: center !important;
+        width: 100%;
+    }
+}
+.team-member {
+    gap: 20px;
+    z-index: 10;
+}
+.team img {
+    width: 167px;
+    height: 167px;
+}
+.team-member-legend {
+    gap: 11px;
+}
+.little-branch {
+    width: clamp(70.7px, 13.28vw, 191.21px);
+    position: absolute;
+    bottom: 0;
+    right: 4.64vw;
+    z-index: 9;
+}
+.little-branch img {
+    width: 100%;
+}

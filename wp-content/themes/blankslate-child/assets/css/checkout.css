@@ -1,0 +1,129 @@
+/*** Page Commander ***/
+/* Général */
+.checkout-title {
+    padding: 69px 0;
+}
+.page-template-checkout {
+    background-color: var(--color-brand-secondary);
+    color: var(--color-light);
+}
+.chekout-main {
+    max-width: 862px;
+    margin: auto;
+}
+@media (max-width: 936px) {
+    .chekout-main {
+        margin: clamp(16px, 2.57vw, 37px);
+    }
+    .product {
+        flex-basis: calc(50% - 15px);
+    }
+    .product:nth-child(odd) {
+        align-items: flex-end;
+    }
+}
+.global-checkout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 93px;
+}
+/* Votre commande */
+.checkout {
+    display: flex;
+    flex-direction: column;
+    padding: 39px 0;
+    gap: 40px;
+    border-top: solid 1px var(--color-light);
+    border-bottom: solid 1px var(--color-light);
+}
+.checkout-form-title {
+    text-align: left;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.product-title-container {
+    width: 193px;
+    height: 128.67px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 21.5px;
+}
+#product-title-container-framboise {
+    padding: 45px;
+}
+.product-title {
+    display: inline-block;
+    overflow-wrap: anywhere;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.cart-container {
+    display: flex;
+    gap: 11px;
+}
+.cart-button {
+    width: 100px;
+}
+.quantity {
+    display: flex;
+    border-radius: 5px;    
+}
+/* Vos informations et Livraison */
+.client-and-delivery {
+    width: 100%;
+    display: flex;
+    padding: 53px 0 44px 0;
+}
+.client {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    padding-right: min(4.81vw, 45px);
+    border-right: solid 0.5px var(--color-light);
+}
+.delivery {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    padding-left: min(4.81vw, 45px);
+    border-left: solid 0.5px var(--color-light);
+}
+
+@media (max-width: 652px) {
+    .client-and-delivery {
+        flex-direction: column;
+    }
+    .client {
+        flex-basis: 100%;
+        padding-right: 0px;
+        padding-bottom: 39px;
+        border-right: none;
+        border-bottom: solid 0.5px var(--color-light);
+    }
+    .delivery {
+        flex-basis: 100%;
+        padding-left: 0px;
+        padding-top: 39px;
+        border-left: none;
+        border-top: solid 0.5px var(--color-light);
+    }
+    .form-fields {
+        width: 100%;
+        max-width: 100%;
+    }
+}

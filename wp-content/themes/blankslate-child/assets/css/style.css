@@ -1,0 +1,313 @@
+/*
+Theme Name:   Blankslate Child
+Theme URI:    
+Description:  Blankslate Child Theme
+Author:       Noémie Koelblen
+Author URI:   
+Template:     Blankslate
+Version:      1.0.0
+License:      
+License URI:  
+Tags:         
+Text Domain:  
+*/
+
+/*** Polices ***/
+* {
+    font-family: 'Syne';
+    font-size: 16px;
+}
+input {
+    font-family: 'Inter';
+}
+h1 {
+    font-size: 38px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center; 
+}
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+a {
+    font-family: 'Syne';
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--color-dark);
+}
+.has-x-large-font-size {
+    font-size: 38px !important;
+}
+.has-large-font-size {
+    font-size: 30px !important;
+}
+@media (max-width: 617px) {
+    h1, h2, .has-x-large-font-size, .has-large-font-size {
+        font-size: 20px !important;
+    }
+    .has-medium-font-size {
+        font-size: 16px !important;
+    }
+}
+/*** Couleurs ***/
+:root{
+    --color-brand-primary: #ECE2DA;
+    --color-light: white;
+    --color-brand-tertiary: #D2776A;
+    --color-brand-secondary: #3B8E46;
+    --color-brand-tertiary-light: #E0B9B4;
+    --color-brand-tertiary-dark: #C02E44;
+    --color-dark: black;
+
+}
+.has-dark-color {
+    color: var(--color-dark);
+}
+.has-light-color {
+    color: var(--color-light);
+}
+.has-brand-primary-color {
+    color: var(--color-brand-primary);
+}
+.has-brand-tertiary-light-color {
+    color: var(--color-brand-tertiary-light);
+}
+.has-brand-tertiary-color {
+    color: var(--color-brand-tertiary);
+}
+.has-brand-tertiary-dark-color {
+    color: var(--color-brand-tertiary-dark);
+}
+.has-brand-secondary-color {
+    color: var(--color-brand-secondary);
+}
+.has-dark-background-color {
+    background-color: var(--color-dark);
+}
+.has-light-background-color {
+    background-color: var(--color-light);
+}
+.has-brand-primary-background-color {
+    background-color: var(--color-brand-primary);
+}
+.has-brand-tertiary-light-background-color {
+    background-color: var(--color-brand-tertiary-light);
+}
+.has-brand-tertiary-background-color {
+    background-color: var(--color-brand-tertiary);
+}
+.has-brand-tertiary-dark-background-color {
+    background-color: var(--color-brand-tertiary-dark);
+}
+.has-brand-secondary-background-color {
+    background-color: var(--color-brand-secondary);
+}
+
+/*** Général ***/
+body {
+    background-color: var(--color-brand-primary);
+}
+.wp-block-group__inner-container {
+    padding: 0 clamp(16px, 2.57vw, 37px);
+}
+button, .wp-block-button__link, .wp-element-button, input[type=submit], p:has(.wpcf7-spinner) {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    width: 198px;
+    height: 55px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    background-color: var(--color-brand-tertiary-light);
+    border: none;
+    border-radius: 5px;
+
+    font-family: 'Syne';
+    font-size: 15px;
+    color: var(--color-light);
+    
+    cursor: pointer;
+}
+button:hover, .wp-block-button__link:hover, .wp-element-button:hover, input[type=submit]:hover {
+    background-color: var(--color-brand-tertiary-dark);
+}
+.divider, .divider img {
+    width: 100%;
+}
+
+/*** En-tête ***/
+header {
+    display: flex;
+    justify-content: space-between; /* horizontal */
+    align-items: center; /* vertical */
+    flex-wrap: wrap;
+
+    padding-left: clamp(16px, 2.57vw, 37px);
+
+    background-color: var(--color-light);
+}
+.custom-logo-link {
+    height: 80px;
+}
+.custom-logo {
+    width: 201px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: clamp(16px, 4.17vw, 60px) ;
+}
+
+/*** Pied de page ***/
+footer {
+    display: flex;
+    justify-content: center; /* horizontal */
+
+    padding: 20px 0 21px 0;
+
+    background-color: var(--color-light);
+}
+
+/*** Menus ***/
+.menu {
+    display: flex;
+    align-items: center; /* vertical */
+
+    gap: clamp(16px, 4.17vw, 60px);
+}
+header #menu {
+    margin-left: auto;
+}
+.menu-item {
+    text-align: center;
+}
+.menu>li>a:hover {
+    font-weight: 700;
+}
+#menu-main-menu li:last-child a {
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+
+    width: min(50vw, 236px);
+    height: 80px;
+
+    background-color: var(--color-brand-tertiary);
+
+    font-weight: 700;
+    color: var(--color-light);
+}
+#menu-main-menu li:last-child a:hover {
+    background-color: var(--color-brand-tertiary-dark);
+}
+.admin-link a::after {
+    content: "Admin";
+}
+@media (max-width: 409px) {
+    .admin-link a::after {
+        content: '\f4fe';
+        font-family: "Font Awesome 6 brands";
+        font: var(--fa-font-solid); 
+    }
+}
+
+
+/*** Formulaires ***/
+/* Général */
+.form-fields {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 383px;
+
+    gap: 30px;
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+.form-fields p span {
+    display: block;
+
+    margin-top: 13px; 
+}
+
+.wpcf7-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* horizontal */
+
+    gap: 24px;
+    margin: 28px 0 42px 0;
+}
+span.wpcf7-spinner {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(-50%, -50%) ;
+}
+/* Champs de texte */
+input[type="text"], input[type="email"] {
+    width: 100%;
+    height: 71px;
+
+    border: none;
+    border-radius: 7px;
+}
+/* Champs de nombre */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.quantity-input {
+    width: 51px;
+
+    border: none;
+    border-radius: 5px 0 0 5px;
+
+    text-align: center;    
+}
+.plus-minus-buttons {
+    display: flex;
+    flex-direction: column;
+}
+.plus-button {
+    width: 31px;
+    height: 28px;
+
+    background-color: var(--color-brand-tertiary);
+    border-bottom: solid 0.5px var(--color-light);
+    border-radius: 0 5px 0 0;
+}
+.minus-button {
+    width: 31px;
+    height: 28px;
+
+    background-color: var(--color-brand-tertiary);
+    border-top: solid 0.5px var(--color-light);
+    border-radius: 0 0 5px 0;
+}
+/* Champs de paragraphe */
+textarea {
+    width: 100%;
+    height: 237px;
+
+    border: none;
+    border-radius: 7px;
+}

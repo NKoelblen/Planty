@@ -4,7 +4,7 @@ inputNumber.forEach(function(item){
   // create wrapper container
   let wrapper = document.createElement('div');
   // add class to wrapper div
-  wrapper.classList.add("quantity-buttons");
+  wrapper.classList.add("quantity");
   // insert wrapper before item in the DOM tree
   item.parentNode.insertBefore(wrapper, item);
   // move item into wrapper

@@ -8,7 +8,7 @@ function enqueue_parent_style()
 add_action('wp_enqueue_scripts', 'enqueue_child_style', 11);
 function enqueue_child_style()
 {
-    wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/style.css'));
+    wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array(), filemtime(get_stylesheet_directory() . '/style.css'));
     wp_enqueue_style('home-style', get_stylesheet_directory_uri() . '/assets/css/home.css', array('child-style'), filemtime(get_stylesheet_directory() . '/assets/css/home.css'));
     wp_enqueue_style('meet-style', get_stylesheet_directory_uri() . '/assets/css/meet.css', array('child-style'), filemtime(get_stylesheet_directory() . '/assets/css/meet.css'));
 

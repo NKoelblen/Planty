@@ -4,6 +4,9 @@
     max-width: 497px;
     margin: auto;
 }
+.home .footer-cans {
+    background: url(../img/Canettes.png), var(--color-light);
+}
 /* Canette */
 .can-container {
     position: relative;

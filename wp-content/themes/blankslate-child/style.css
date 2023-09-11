@@ -117,6 +117,7 @@ body {
 .wp-block-group__inner-container {
     padding: 0 clamp(16px, 2.57vw, 37px);
 }
+
 button, .wp-block-button__link, .wp-element-button, input[type=submit], p:has(.wpcf7-spinner) {
     display: inline-flex;
     justify-content: center;
@@ -171,7 +172,7 @@ header {
 .footer-cans {
     width: 100%;
     height: 131px;
-    background: url(./assets/img/Canettes.png) left top repeat;
+    background: url(./assets/img/Canettes.png) center top repeat;
 }
 footer {
     display: flex;

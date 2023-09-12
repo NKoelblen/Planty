@@ -1,15 +1,9 @@
 /*
-Theme Name:   Blankslate Child
-Theme URI:    
+Theme Name:   Blankslate Child 
 Description:  Blankslate Child Theme
-Author:       Noémie Koelblen
-Author URI:   
+Author:       Noémie Koelblen   
 Template:     Blankslate
-Version:      1.0.0
-License:      
-License URI:  
-Tags:         
-Text Domain:  
+Version:      1.0.0  
 */
 
 /*** Polices ***/
@@ -117,8 +111,7 @@ body {
 .wp-block-group__inner-container {
     padding: 0 clamp(16px, 2.57vw, 37px);
 }
-
-button, .wp-block-button__link, .wp-element-button, input[type=submit], p:has(.wpcf7-spinner) {
+button, .wp-block-button__link, .wp-element-button, input[type=submit] {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -233,7 +226,7 @@ header #menu {
     display: flex;
     flex-direction: column;
 
-    max-width: 383px;
+    width: min(100%, 383px);
 
     gap: 30px;
 }

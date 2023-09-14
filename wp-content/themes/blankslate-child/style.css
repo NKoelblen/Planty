@@ -143,8 +143,8 @@ button:hover, .wp-block-button__link:hover, .wp-element-button:hover, input[type
 /*** En-tête ***/
 header {
     display: flex;
-    justify-content: space-between; /* horizontal */
-    align-items: center; /* vertical */
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 
     padding-left: clamp(16px, 2.57vw, 37px);
@@ -169,7 +169,7 @@ header {
 }
 footer {
     display: flex;
-    justify-content: center; /* horizontal */
+    justify-content: center;
 
     padding: 20px 0 21px 0;
 
@@ -179,7 +179,7 @@ footer {
 /*** Menus ***/
 .menu {
     display: flex;
-    align-items: center; /* vertical */
+    align-items: center;
 
     gap: clamp(16px, 4.17vw, 60px);
 }
@@ -194,8 +194,8 @@ header #menu {
 }
 #menu-main-menu li:last-child a {
     display: flex;
-    justify-content: center; /* horizontal */
-    align-items: center; /* vertical */
+    justify-content: center;
+    align-items: center;
 
     width: min(50vw, 236px);
     height: 80px;
@@ -246,7 +246,7 @@ header #menu {
 .wpcf7-form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* horizontal */
+    align-items: center;
 
     gap: 24px;
     margin: 28px 0 42px 0;

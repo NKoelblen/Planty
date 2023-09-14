@@ -37,11 +37,9 @@
 
 }
 .home .wp-block-post, .home .wp-block-cover, .home .wp-block-cover__background, .home .wp-block-cover img.wp-block-cover__image-background {
-    width: 100%;
-    max-width: 393px;
+    width: min(100%, 393px);
     height: min(( 100vw - 32px ) / 3 * 2, 262px);
-    max-height: 262px;
-    min-height: 0px;
+    min-height: 0;
     padding: 0px;
     margin: 0px;
 }

@@ -75,13 +75,12 @@ function add_extra_item_to_nav_menu($items, $args)
 {
     if (is_user_logged_in() && $args->theme_location == 'main-menu') {
         $items_array = array();
-        while (($item_pos = strpos($items, '<li', 2)) !== false) // Add the position where the menu item is placed
-        {
+        while (($item_pos = strpos($items, '<li', 2)) !== false) {
             $items_array[] = substr($items, 0, $item_pos);
             $items = substr($items, $item_pos);
         }
         $items_array[] = $items;
-        array_splice($items_array, 1, 0, '<li class="menu-item admin-link"><a href="' . admin_url() . '"></a></li>'); // insert custom item after 9th item one
+        array_splice($items_array, 1, 0, '<li class="menu-item admin-link"><a href="' . admin_url() . '"></a></li>');
 
         $items = implode('', $items_array);
     }

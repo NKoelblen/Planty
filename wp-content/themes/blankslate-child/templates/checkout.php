@@ -20,7 +20,7 @@
                         <h2 class="checkout-form-title">Votre commande</h2>
                         <?php $args = array(
                             'post_type' => 'post',
-                            'post_status' => 'publish', // Also support: pending, draft, auto-draft, future, private, inherit, trash, any
+                            'post_status' => 'publish',
                             'posts_per_page' => '-1',
                             'order' => 'ASC',
                         );
@@ -146,14 +146,20 @@
 
                 wp_mail($email_to, $email_subject, $email_body, array('From: ' . $email_from)); ?>
 
-                <p><?php echo "From: " . $email_from ?></p>
-                <p><?php echo "To: " . $email_to ?></p>
-                <p><?php echo "Subject: " . $email_subject ?></p>
-                <p><?php echo $email_body ?></p>
-
             </article>
     <?php endwhile;
     endif; ?>
 </main>
+
+<?php
+function write_to_console($data)
+{
+    $console = 'console.log(' . json_encode($data) . ');';
+    $console = sprintf('<script>%s</script>', $console);
+    echo $console;
+}
+$data = array('From:' => $email_from, 'To:' => $email_to, 'Subject:' => $email_subject, 'Body:' => $email_body);
+write_to_console($data);
+?>
 
 <?php get_footer(); ?>

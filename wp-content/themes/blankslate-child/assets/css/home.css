@@ -5,7 +5,7 @@
     margin: auto;
 }
 .home .footer-cans {
-    background: url(../img/Canettes.png) center top repeat, var(--color-light);
+    background: url(../img/Canettes.webp) center top repeat, var(--color-light);
 }
 /* Canette */
 .can-container {

@@ -165,7 +165,7 @@ header {
 .footer-cans {
     width: 100%;
     height: 131px;
-    background: url(./assets/img/Canettes.png) center top repeat;
+    background: url(./assets/img/Canettes.webp) center top repeat;
 }
 footer {
     display: flex;

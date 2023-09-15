@@ -9,6 +9,6 @@
             </article>
     <?php endwhile;
     endif; ?>
-    <?php get_template_part('/templates/parts/footer-cans'); ?>
+    <?php get_template_part('/template-parts/footer-cans'); ?>
 </main>
 <?php get_footer(); ?>

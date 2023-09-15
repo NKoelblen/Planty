@@ -29,6 +29,8 @@ function planty_setup()
 {
     add_theme_support('custom-logo');
 
+    add_theme_support('custom-spacing');
+
     add_theme_support('editor-color-palette', array(
         array(
             'name'  => esc_attr__('Sombre', 'themeLangDomain'),

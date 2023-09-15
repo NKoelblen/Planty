@@ -1,0 +1,73 @@
+/*** Page d'Accueil ***/
+/* Général */
+.home .framed {
+    max-width: 497px;
+    margin: auto;
+}
+.home .footer-cans {
+    background: url(../img/Canettes.webp) center top repeat, var(--color-light);
+}
+/* Canette */
+.can-container {
+    position: relative;
+    justify-content: center;
+    gap: 0px;
+}
+.can {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.branch-right {
+    transform: scaleX(-1);
+}
+/* Produits */
+.home .wp-block-post-template {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    max-width: 816px;
+
+    column-gap: 30px;
+    row-gap: 40px;
+    margin: auto;
+
+}
+.home .wp-block-post, .home .wp-block-cover, .home .wp-block-cover__background, .home .wp-block-cover img.wp-block-cover__image-background {
+    width: min(100%, 393px);
+    height: min(( 100vw - 32px ) / 3 * 2, 262px);
+    min-height: 0;
+    padding: 0px;
+    margin: 0px;
+}
+.home .wp-block-post.post-97 .wp-block-post-title {
+    width: min(( 100vw - 32px ) / 3 * 2, 245px);
+}
+.home .wp-block-post-title {
+    font-size: min(11.29vw, 48px) !important;
+}
+/* Témoignages */
+div.wp-block-group.testimonies {
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+}
+.testimony-container {
+    width: 343px;
+    gap: 21px;
+}
+.testimony {
+    gap: 11px;
+}
+.testimony-container img {
+    -webkit-mask-image: url(../img/P_mask.png);
+    mask-image: url(../img/P_mask.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    max-width: 126px;
+  }
